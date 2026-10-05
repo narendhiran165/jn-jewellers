@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JN Jewellers | Timeless Gold. Modern Elegance.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                <span>JN</span>
+                <small>JEWELLERS</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+
+                <a href="#contact" class="nav-btn">
+                    Enquire Now
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="hero-small">
+                CRAFTED WITH PASSION
+            </p>
+
+            <h1>
+                Timeless Gold.<br>
+                Modern Elegance.
+            </h1>
+
+            <p class="hero-description">
+                Discover jewellery crafted to celebrate
+                your most beautiful moments.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#collections" class="btn btn-gold">
+                    Explore Collection
+                </a>
+
+                <a href="#showroom" class="btn btn-outline">
+                    Visit Showroom
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro section">
+
+        <div class="container intro-content">
+
+            <div class="intro-text">
+
+                <p class="section-label">
+                    WELCOME TO JN
+                </p>
+
+                <h2>
+                    Jewellery that becomes
+                    part of your story.
+                </h2>
+
+                <p>
+                    At JN Jewellers, we believe jewellery is more
+                    than an accessory. It represents love,
+                    celebration, tradition and memories that
+                    stay with you forever.
+                </p>
+
+                <p>
+                    From timeless gold designs to elegant diamond
+                    creations, every piece is crafted with care,
+                    precision and attention to detail.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>25+</h3>
+                    <p>Years of Trust</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>1000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Quality Commitment</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLLECTIONS
+    ========================== -->
+
+    <section class="collections section" id="collections">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    OUR COLLECTIONS
+                </p>
+
+                <h2>
+                    Crafted for Every Occasion
+                </h2>
+
+                <p>
+                    Discover designs that blend traditional
+                    craftsmanship with modern elegance.
+                </p>
+
+            </div>
+
+
+            <div class="collection-grid">
+
+                <!-- GOLD -->
+
+                <div class="collection-card">
+
+                    <img
+                        src="{{ url_for('static', filename='images/gold-collection.jpg') }}"
+                        alt="Gold Jewellery Collection">
+
+                    <div class="collection-overlay">
+
+                        <span>01</span>
+
+                        <h3>
+                            Gold Collection
+                        </h3>
+
+                        <p>
+                            Timeless gold jewellery
+                            for every celebration.
+                        </p>
+
+                        <a href="#products">
+                            Explore →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DIAMOND -->
+
+                <div class="collection-card">
+
+                    <img
+                        src="{{ url_for('static', filename='images/diamond-collection.jpg') }}"
+                        alt="Diamond Jewellery Collection">
+
+                    <div class="collection-overlay">
+
+                        <span>02</span>
+
+                        <h3>
+                            Diamond Collection
+                        </h3>
+
+                        <p>
+                            Elegant diamond pieces
+                            made to shine.
+                        </p>
+
+                        <a href="#products">
+                            Explore →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BRIDAL -->
+
+                <div class="collection-card">
+
+                    <img
+                        src="{{ url_for('static', filename='images/bridal-collection.jpg') }}"
+                        alt="Bridal Jewellery Collection">
+
+                    <div class="collection-overlay">
+
+                        <span>03</span>
+
+                        <h3>
+                            Bridal Collection
+                        </h3>
+
+                        <p>
+                            Celebrate your special
+                            moments in timeless style.
+                        </p>
+
+                        <a href="#products">
+                            Explore →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED PRODUCTS
+    ========================== -->
+
+    <section class="products section" id="products">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    FEATURED JEWELLERY
+                </p>
+
+                <h2>
+                    Signature Pieces
+                </h2>
+
+                <p>
+                    A glimpse of our carefully selected
+                    jewellery collection.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="{{ url_for('static', filename='images/gold-necklace.jpg') }}"
+                            alt="Classic Gold Necklace">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span>
+                            GOLD
+                        </span>
+
+                        <h3>
+                            Classic Gold Necklace
+                        </h3>
+
+                        <p>
+                            Elegant traditional design
+                            with a modern finish.
+                        </p>
+
+                        <button
+                            class="enquire-btn"
+                            data-product="Classic Gold Necklace">
+
+                            Enquire on WhatsApp
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                                     src="{{ url_for('static', filename='images/diamond-ring.jpg') }}"
+                                     alt="Signature Diamond Ring">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span>
+                            DIAMOND
+                        </span>
+
+                        <h3>
+                            Signature Diamond Ring
+                        </h3>
+
+                        <p>
+                            Sophisticated brilliance
+                            for unforgettable moments.
+                        </p>
+
+                        <button
+                            class="enquire-btn"
+                            data-product="Signature Diamond Ring">
+
+                            Enquire on WhatsApp
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="{{ url_for('static', filename='images/gold-earrings.jpg') }}"
+                            alt="Traditional Gold Earrings">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span>
+                            GOLD
+                        </span>
+
+                        <h3>
+                            Traditional Gold Earrings
+                        </h3>
+
+                        <p>
+                            Classic craftsmanship
+                            inspired by tradition.
+                        </p>
+
+                        <button
+                            class="enquire-btn"
+                            data-product="Traditional Gold Earrings">
+
+                            Enquire on WhatsApp
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="{{ url_for('static', filename='images/bridal-set.jpg') }}"
+                            alt="Bridal Heritage Set">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span>
+                            BRIDAL
+                        </span>
+
+                        <h3>
+                            Bridal Heritage Set
+                        </h3>
+
+                        <p>
+                            A statement collection
+                            for your special day.
+                        </p>
+
+                        <button
+                            class="enquire-btn"
+                            data-product="Bridal Heritage Set">
+
+                            Enquire on WhatsApp
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY US
+    ========================== -->
+
+    <section class="why-us section" id="why-us">
+
+        <div class="container">
+
+            <div class="section-heading light">
+
+                <p class="section-label">
+                    WHY JN JEWELLERS
+                </p>
+
+                <h2>
+                    Excellence in Every Detail
+                </h2>
+
+                <p>
+                    Because every piece you choose
+                    deserves the finest care.
+                </p>
+
+            </div>
+
+
+            <div class="why-grid">
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Exceptional Craftsmanship
+                    </h3>
+
+                    <p>
+                        Every piece is created with
+                        precision and attention to detail.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Quality You Can Trust
+                    </h3>
+
+                    <p>
+                        We believe in delivering jewellery
+                        that meets the highest standards.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Personalised Service
+                    </h3>
+
+                    <p>
+                        Our team helps you find the
+                        perfect piece for every occasion.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        ✧
+                    </div>
+
+                    <h3>
+                        Timeless Designs
+                    </h3>
+
+                    <p>
+                        Traditional inspiration meets
+                        contemporary jewellery design.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about section" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+    <img
+        src="{{ url_for('static', filename='images/about-jewellery.jpg') }}"
+        alt="JN Jewellers Showroom">
+</div>
+
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT JN JEWELLERS
+                </p>
+
+                <h2>
+                    Where Tradition Meets
+                    Modern Elegance
+                </h2>
+
+                <p>
+                    JN Jewellers is built around a simple belief:
+                    jewellery should be beautiful, meaningful
+                    and made to last.
+                </p>
+
+                <p>
+                    Inspired by the rich jewellery traditions
+                    of South India, we bring together classic
+                    craftsmanship and contemporary design.
+                </p>
+
+                <p>
+                    Whether you are looking for everyday gold
+                    jewellery, a memorable diamond piece or
+                    bridal jewellery for your special day,
+                    we are here to help you find something
+                    truly meaningful.
+                </p>
+
+                <a href="#contact" class="btn btn-dark">
+                    Talk to Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REVIEWS
+    ========================== -->
+
+    <section class="reviews section" id="reviews">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    CUSTOMER EXPERIENCES
+                </p>
+
+                <h2>
+                    What Our Customers Say
+                </h2>
+
+            </div>
+
+
+            <div class="review-grid">
+
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Beautiful collection and excellent
+                        customer service. The staff helped us
+                        choose the perfect jewellery.”
+                    </p>
+
+                    <h4>
+                        — Priya
+                    </h4>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “The designs are elegant and the quality
+                        is excellent. Highly recommended.”
+                    </p>
+
+                    <h4>
+                        — Kavitha
+                    </h4>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “We bought our wedding jewellery here.
+                        The entire experience was wonderful.”
+                    </p>
+
+                    <h4>
+                        — Arun & Meena
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SHOWROOM
+    ========================== -->
+
+    <section class="showroom section" id="showroom">
+
+        <div class="container showroom-content">
+
+            <p class="section-label">
+                VISIT OUR SHOWROOM
+            </p>
+
+            <h2>
+                Experience JN Jewellers
+                in Person
+            </h2>
+
+            <p>
+                Explore our collections, speak with our
+                jewellery experts and discover a piece
+                made for your story.
+            </p>
+
+
+            <div class="showroom-details">
+
+                <div>
+                    <strong>
+                        Location
+                    </strong>
+
+                    <span>
+                        W Raja Street,
+                        Kanchipuram,
+                        Tamil Nadu
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong>
+                        Opening Hours
+                    </strong>
+
+                    <span>
+                        10:00 AM – 8:30 PM
+                    </span>
+                </div>
+
+            </div>
+
+
+            <a href="#contact" class="btn btn-gold">
+                Plan Your Visit
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact section" id="contact">
+
+        <div class="container contact-grid">
+
+
+            <div class="contact-content">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's Find Your
+                    Perfect Jewellery
+                </h2>
+
+                <p>
+                    Have a question about a product,
+                    collection or custom jewellery?
+                    Get in touch with us.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+
+                <div class="contact-item">
+
+                    <span>
+                        PHONE
+                    </span>
+
+                    <a href="tel:+919999999999">
+                        +91 99999 99999
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <a href="mailto:hello@jnjewellers.com">
+                        hello@jnjewellers.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        LOCATION
+                    </span>
+
+                    <p>
+                        Kanchipuram,
+                        Tamil Nadu
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="btn btn-dark"
+                    id="mainWhatsapp">
+
+                    Enquire on WhatsApp
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+
+                    <span>JN</span>
+
+                    <small>
+                        JEWELLERS
+                    </small>
+
+                </a>
+
+                <p>
+                    Timeless Gold. Modern Elegance.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#collections">
+                    Collections
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                <p>
+                    © 2026 JN Jewellers.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         FLOATING WHATSAPP
+    ========================== -->
+
+    <a
+        href="#"
+        class="whatsapp-float"
+        id="whatsappFloat"
+        aria-label="Chat on WhatsApp">
+
+        <span>
+            WhatsApp
+        </span>
+
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
